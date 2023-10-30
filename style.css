@@ -3,12 +3,12 @@
  * CSS FILE
  */
 
-body {
+
+ body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #ffbfbf;
+
+  
 }
 
 h1 {
@@ -16,4 +16,149 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #023047;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+
+.logo{
+  width: 140px;
+  cursor: pointer;
+}
+
+.menu-bar{
+  background: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #efbcbc;
+}
+
+.menu-bar ul li{
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.menu-bar ul li a{
+  text-decoration: none;
+  color: #ffd1d1;
+}
+
+.active, .menu-bar ul li:hover{
+  background: #e50c0c;
+  border-radius: 3px;
+}
+
+.menu-bar .fa{
+  margin-right: 8px;
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background: rgb(27, 3, 3);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #c66d6d;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: #808080;
+}
+
+h1{
+  color:rgb(66, 21, 108)
+}
+h4{
+  color:blueviolet
+}
+p{
+  color: rgb(25, 5, 43);
+}
+
+body {
+  background-color: rgb(202, 96, 96);
+}
+
+
+
+
+/* about site */
+
+.about-msg{
+  text-align: center;
+  margin: 80px 0;
+  color: #000000;
+  font-size: 17px;
+}
+
+.about-msg h2{
+  font-size: 28px;
+  margin-bottom: 30;
+  font-weight: 500;
+}
+
+/* newsletter form */
+
+.form{
+  background: #b3bdda;
+  width: 80%;
+  margin: 30px auto;
+  padding: 6px 200px 6px 200px;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form h3{
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  
+}
+
+/* stay updated */
+
+.start-btn{
+  text-decoration: none;
+  text-align: center;
+  background: #484444;
+  color: #eddada;
+  width: 80%;
+  max-width: 350px;
+  display: block;
+  margin: 60px auto;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 20px;
 }
